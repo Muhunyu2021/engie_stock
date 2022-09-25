@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './modules/auth/services/auth.guard';
+import {ConsignmentsTransitComponent} from "./pages/consignments-transit/consignments-transit.component";
 
 export const routes: Routes = [
   {

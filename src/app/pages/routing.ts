@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import {ConsignmentsTransitComponent} from "./consignments-transit/consignments-transit.component";
+import {InventorizationComponent} from "./inventorization/inventorization.component";
 
 const Routing: Routes = [
   {
@@ -23,6 +25,17 @@ const Routing: Routes = [
       import('../modules/account/account.module').then((m) => m.AccountModule),
     data: { layout: 'dark-header' },
   },
+  //custom pages
+  {
+    path: 'git',
+     component: ConsignmentsTransitComponent
+},
+  {
+    path: 'inventorization',
+    component: InventorizationComponent
+  },
+
+  //end custom pages
   {
     path: 'crafted/pages/wizards',
     loadChildren: () =>

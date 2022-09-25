@@ -74,27 +74,27 @@ function getChart1Options(chartHeightNumber: number) {
   const options = {
     series: [
       {
-        name: 'Social Campaigns',
+        name: 'Kisumu',
         data: data[0], // array value is of the format [x, y, z] where x (timestamp) and y are the two axes coordinates,
       },
       {
-        name: 'Email Newsletter',
+        name: 'Nairobi',
         data: data[1],
       },
       {
-        name: 'TV Campaign',
+        name: 'Kisii',
         data: data[2],
       },
       {
-        name: 'Google Ads',
+        name: 'Kitale',
         data: data[3],
       },
       {
-        name: 'Courses',
+        name: 'Kericho',
         data: data[4],
       },
       {
-        name: 'Radio',
+        name: 'Mombasa',
         data: data[5],
       },
     ],
@@ -223,27 +223,27 @@ function getChart2Options(chartHeightNumber: number) {
   const options = {
     series: [
       {
-        name: 'Social Campaigns',
+        name: 'Kisumu',
         data: data[0], // array value is of the format [x, y, z] where x (timestamp) and y are the two axes coordinates,
       },
       {
-        name: 'Email Newsletter',
+        name: 'Nairobi',
         data: data[1],
       },
       {
-        name: 'TV Campaign',
+        name: 'Kisii',
         data: data[2],
       },
       {
-        name: 'Google Ads',
+        name: 'Kitale',
         data: data[3],
       },
       {
-        name: 'Courses',
+        name: 'Kericho',
         data: data[4],
       },
       {
-        name: 'Radio',
+        name: 'Mombasa',
         data: data[5],
       },
     ],

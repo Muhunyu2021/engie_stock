@@ -11,8 +11,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthService } from './modules/auth/services/auth.service';
 import { environment } from 'src/environments/environment';
+import { DataTablesModule } from "angular-datatables";
 // #fake-start#
 import { FakeAPIService } from './_fake/fake-api.service';
+import { ConsignmentsTransitComponent } from './pages/consignments-transit/consignments-transit.component';
+import { InventorizationComponent } from './pages/inventorization/inventorization.component';
 // #fake-end#
 
 function appInitializer(authService: AuthService) {
@@ -25,13 +28,14 @@ function appInitializer(authService: AuthService) {
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ConsignmentsTransitComponent, InventorizationComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     TranslateModule.forRoot(),
     HttpClientModule,
     ClipboardModule,
+    DataTablesModule,
     // #fake-start#
     environment.isMockEnabled
       ? HttpClientInMemoryWebApiModule.forRoot(FakeAPIService, {
