@@ -1,6 +1,9 @@
 import { Routes } from '@angular/router';
 import {ConsignmentsTransitComponent} from "./consignments-transit/consignments-transit.component";
 import {InventorizationComponent} from "./inventorization/inventorization.component";
+import {StockOrderingComponent} from "./stock-ordering/stock-ordering.component";
+import {StockDispatchComponent} from "./stock-dispatch/stock-dispatch.component";
+import {InventorizationManagerComponent} from "./inventorization-manager/inventorization-manager.component";
 
 const Routing: Routes = [
   {
@@ -33,6 +36,18 @@ const Routing: Routes = [
   {
     path: 'inventorization',
     component: InventorizationComponent
+  },
+  {
+    path: 'stock_ordering',
+    component: StockOrderingComponent
+  },
+  {
+    path: 'stock_dispatch',
+    component: StockDispatchComponent
+  },
+  {
+    path: 'inventorization_manager',
+    component: InventorizationManagerComponent
   },
 
   //end custom pages

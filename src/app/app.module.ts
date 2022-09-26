@@ -16,6 +16,9 @@ import { DataTablesModule } from "angular-datatables";
 import { FakeAPIService } from './_fake/fake-api.service';
 import { ConsignmentsTransitComponent } from './pages/consignments-transit/consignments-transit.component';
 import { InventorizationComponent } from './pages/inventorization/inventorization.component';
+import { InventorizationManagerComponent } from './pages/inventorization-manager/inventorization-manager.component';
+import { StockOrderingComponent } from './pages/stock-ordering/stock-ordering.component';
+import { StockDispatchComponent } from './pages/stock-dispatch/stock-dispatch.component';
 // #fake-end#
 
 function appInitializer(authService: AuthService) {
@@ -28,7 +31,7 @@ function appInitializer(authService: AuthService) {
 }
 
 @NgModule({
-  declarations: [AppComponent, ConsignmentsTransitComponent, InventorizationComponent],
+  declarations: [AppComponent, ConsignmentsTransitComponent, InventorizationComponent, InventorizationManagerComponent, StockOrderingComponent, StockDispatchComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
